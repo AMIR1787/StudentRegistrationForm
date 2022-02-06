@@ -13,9 +13,9 @@
             <Font name="System Bold" size="40.0" />
          </font>
       </Label>
-      <Button layoutX="227.0" layoutY="108.0" mnemonicParsing="false" text="Register" textFill="#4013e4" onAction="#adminpage"/>
-      <Button layoutX="227.0" layoutY="175.0" mnemonicParsing="false" text="Remove" textFill="#c60f24" />
-      <Button layoutX="229.0" layoutY="235.0" mnemonicParsing="false" text="Update" textFill="#0d1fbf" />
-      <Button layoutX="236.0" layoutY="301.0" mnemonicParsing="false" text="View" textFill="#e81a1a" />
+      <Button layoutX="227.0" layoutY="108.0" mnemonicParsing="false" text="Register" textFill="#4013e4" onAction="#register"/>
+      <Button layoutX="227.0" layoutY="175.0" mnemonicParsing="false" text="Remove" textFill="#c60f24" onAction="#removepage"/>
+      <Button layoutX="229.0" layoutY="235.0" mnemonicParsing="false" text="Update" textFill="#0d1fbf"  />
+      <Button layoutX="236.0" layoutY="301.0" mnemonicParsing="false" text="View" textFill="#e81a1a"/>
    </children>
 </AnchorPane>

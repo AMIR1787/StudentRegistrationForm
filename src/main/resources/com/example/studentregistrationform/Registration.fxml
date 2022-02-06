@@ -13,7 +13,7 @@
    <children>
       <ButtonBar layoutX="51.0" layoutY="329.0" prefHeight="40.0" prefWidth="113.0">
         <buttons>
-          <Button mnemonicParsing="false" style="-fx-background-color: blue;" text="Submit" textFill="#eeebeb" />
+          <Button mnemonicParsing="false" style="-fx-background-color: blue;" text="Submit" textFill="#eeebeb"/>
         </buttons>
          <effect>
             <ColorAdjust />
@@ -28,7 +28,7 @@
       <Label layoutX="341.0" layoutY="266.0" text="Email" />
       <Label layoutX="15.0" layoutY="254.0" prefHeight="17.0" prefWidth="82.0" text="Date of Birth" />
       <Label layoutX="23.0" layoutY="296.0" prefHeight="17.0" prefWidth="51.0" text="Gender" />
-      <Button layoutX="339.0" layoutY="337.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Back" />
+      <Button layoutX="339.0" layoutY="337.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Back" onAction="#backtoreg" />
       <TextField layoutX="86.0" layoutY="131.0" />
       <TextField layoutX="86.0" layoutY="165.0" />
       <TextField layoutX="86.0" layoutY="195.0" />
