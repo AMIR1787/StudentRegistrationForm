@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentregistrationform.AdminController" >
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="550.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/17"
+            fx:controller="com.example.studentregistrationform.AdminController">
    <children>
       <Label layoutX="142.0" layoutY="36.0" prefHeight="58.0" prefWidth="310.0" text="Admin Page">
          <font>
-            <Font name="System Bold" size="40.0" />
+            <Font name="System Bold" size="40.0"/>
          </font>
       </Label>
-      <Button layoutX="227.0" layoutY="108.0" mnemonicParsing="false" text="Register" textFill="#4013e4" onAction="#register"/>
-      <Button layoutX="227.0" layoutY="175.0" mnemonicParsing="false" text="Remove" textFill="#c60f24" onAction="#removepage"/>
-      <Button layoutX="229.0" layoutY="235.0" mnemonicParsing="false" text="Update" textFill="#0d1fbf"  />
-      <Button layoutX="236.0" layoutY="301.0" mnemonicParsing="false" text="View" textFill="#e81a1a"/>
+      <Button layoutX="14.0" layoutY="180.0" mnemonicParsing="false" onAction="#register" text="Register"
+              textFill="#4013e4"/>
+      <Button layoutX="15.0" layoutY="227.0" mnemonicParsing="false" onAction="#removepage" text="Remove"
+              textFill="#c60f24"/>
+      <Button layoutX="18.0" layoutY="275.0" mnemonicParsing="false" onAction="#update" text="Update"
+              textFill="#0d1fbf"/>
+      <Button layoutX="16.0" layoutY="329.0" mnemonicParsing="false" onAction="#refresh" text="Refresh"
+              textFill="#e81a1a"/>
+      <Button layoutX="24.0" layoutY="373.0" mnemonicParsing="false" onAction="#back" text="Back"/>
+      <TextField fx:id="studf" layoutX="83.0" layoutY="361.0" promptText="stud fname"/>
+      <TextField fx:id="studln" layoutX="245.0" layoutY="361.0" promptText="stud lname"/>
+      <TextField fx:id="studid" layoutX="401.0" layoutY="361.0" promptText="studid"/>
+      <TextField fx:id="date" layoutX="83.0" layoutY="398.0" promptText="date of birth"/>
+      <TextField fx:id="gender" layoutX="245.0" layoutY="398.0" promptText="gender"/>
+      <TextField fx:id="mobil" layoutX="401.0" layoutY="398.0" promptText="mobile no"/>
+      <TextField fx:id="email" layoutX="83.0" layoutY="432.0" promptText="email"/>
+      <TableView fx:id="tbl" layoutX="83.0" layoutY="128.0" prefHeight="226.0" prefWidth="521.0">
+         <columns>
+            <TableColumn fx:id="colstudfn" prefWidth="75.0" text="STUD_FNAME"/>
+            <TableColumn fx:id="colstudln" prefWidth="75.0" text="STUD_LNAME"/>
+            <TableColumn fx:id="colstudid" prefWidth="75.0" text="STUD_ID"/>
+            <TableColumn fx:id="coldat" prefWidth="75.0" text="DATE_OF_BIRTH"/>
+            <TableColumn fx:id="colgender" prefWidth="75.0" text="GENDER"/>
+            <TableColumn fx:id="colmob" prefWidth="75.0" text="MOBILE_NO"/>
+            <TableColumn fx:id="colemal" prefWidth="75.0" text="EMAIL"/>
+         </columns>
+      </TableView>
+      <Button layoutX="23.0" layoutY="411.0" mnemonicParsing="false" onAction="#view" text="View"/>
    </children>
 </AnchorPane>

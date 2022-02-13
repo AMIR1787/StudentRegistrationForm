@@ -11,6 +11,7 @@ module com.example.studentregistrationform {
     requires eu.hansolo.tilesfx;
     requires java.sql;
     requires java.desktop;
+    requires ojdbc14;
 
     opens com.example.studentregistrationform to javafx.fxml;
     exports com.example.studentregistrationform;
