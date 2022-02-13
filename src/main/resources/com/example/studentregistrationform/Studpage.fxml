@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentregistrationform.StudpageController">
+   <children>
+      <Label layoutX="133.0" layoutY="14.0" prefHeight="75.0" prefWidth="318.0" text="Student page" textFill="#200bdd">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Button layoutX="224.0" layoutY="89.0" mnemonicParsing="false" onAction="#view" text="View" textFill="#10e430" />
+      <TableView fx:id="tbl" layoutX="9.0" layoutY="123.0" prefHeight="314.0" prefWidth="536.0">
+         <columns>
+            <TableColumn fx:id="colstudfn"  prefWidth="75.0" text="STUD_FNAME" />
+            <TableColumn fx:id="colstudln" prefWidth="75.0" text="STUD_LNAME" />
+            <TableColumn fx:id="colstudid" prefWidth="75.0" text="STUD_ID" />
+            <TableColumn fx:id="coldat" prefWidth="75.0" text="DATE_OF_BIRTH" />
+            <TableColumn fx:id="colgender" prefWidth="75.0" text="GENDER" />
+            <TableColumn fx:id="colmob" prefWidth="75.0" text="MOBILE_NO" />
+            <TableColumn fx:id="colemal" prefWidth="75.0" text="EMAIL" />
+         </columns></TableView>
+   </children>
+</AnchorPane>
